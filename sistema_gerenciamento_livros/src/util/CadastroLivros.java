@@ -31,7 +31,7 @@ public class CadastroLivros {
 	
 	public Livro buscarLivro(String titulo) {
 		for (Livro livro : livrosList) {
-			if(livro.getTitulo() == titulo) {
+			if(livro.getTitulo().equals(titulo)) {
 				return livro;
 			}
 		}

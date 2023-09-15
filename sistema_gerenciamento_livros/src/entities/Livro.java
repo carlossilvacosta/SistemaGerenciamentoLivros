@@ -18,7 +18,7 @@ public class Livro {
 		System.out.println("Título: " + titulo);
 		System.out.println("Autor: " + autor);
 		System.out.println("Ano da publicação: " + anoPublicacao);
-		System.out.println("Preço do livro = R$ " + preco);
+		System.out.printf("Preço do livro = R$ %.2f%n", preco);
 	}
 	
 	public void alterarPreco(double preco) {

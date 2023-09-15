@@ -45,7 +45,14 @@ public class Program {
 			System.out.print("Digite o título do livro que deseja buscar? ");
 			sc.nextLine();
 			String titulo = sc.nextLine();
-			cadastro.buscarLivro(titulo);
+			Livro livroEncontrado = cadastro.buscarLivro(titulo);
+			if(livroEncontrado != null) {
+				System.out.println();
+				livroEncontrado.mostraDetalhes();
+			} else {
+				System.out.println();
+				System.out.println("Desculpe, não encontramos seu livro!");
+			}
 		} else if(opcao == 4) {
 			System.out.print("Digite o título do livro que deseja alterar o preço: ");
 			sc.nextLine();
