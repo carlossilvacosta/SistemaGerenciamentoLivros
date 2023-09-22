@@ -26,6 +26,8 @@ public class CadastroLivros {
 			if(livro != null) {
 				livro.setPreco(novoPreco);
 				System.out.println("Preço do livro atualizado!");
+			} else {
+				System.out.println("Esse livro não se encontra no sistema.");
 			}
 	}
 	
